@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Corinthia:wght@400;700&display=swap');
+
+* {
+  font-family: 'Corinthia', cursive;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-transform: capitalize;
+  outline: none;
+  text-decoration: none;
+  transition: all .2s linear;
+  background-color: #F4BEEE;
+}
+:root {
+  --purple: #D47AE8;
+}
+html {
+  /* font-size: 63%; */
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+section {
+  padding: 2rem 9%;
+}
+.heading {
+  text-align: center;
+  padding: 2.5rem 0;
+  font-size: 5.5rem;
+  font-weight: 900;
+  color: var(--purple);
+}
+.btn {
+  display: inline-block;
+  margin-top: 1rem;
+  background: var(--purple);
+  color: #fff;
+  padding: .8rem 3rem;
+  border: .2rem solid var(--purple);
+  cursor: pointer;
+  font-size: 2rem;
+}
+
+.btn:hover {
+  background: #F4BEEE;
+  color: var(--purple);
+}
+.packages .box-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.packages .box-container .box {
+  flex: 1 1 30rem;
+  border-radius: .5rem;
+  overflow: hidden;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, .1);
+}
+
+.packages .box-container .box img {
+  height: 25rem;
+  width: 100%;
+  object-fit: cover;
+}
+
+.packages .box-container .box .content {
+  padding: 2rem;
+}
+
+.packages .box-container .box .content h3 {
+  font-size: 2rem;
+  color: var(--purple);
+  font-size: 3.5rem;
+}
+
+.packages .box-container .box .content h3 i {
+  color: var(--purple);
+}
+
+.packages .box-container .box .content p {
+  font-size: 2.5rem;
+  color: #666;
+  padding: 1rem 0;
+}
+
+
+@media (max-width:500px) {
+  html {
+    font-size: 50%;
+  }
+}
